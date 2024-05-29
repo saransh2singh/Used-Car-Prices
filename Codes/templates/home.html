@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used Car Prices</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'poppins';
+        }
+        .car{
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+        .hero{
+            position: relative;
+        }
+        .text-on-image{
+            position: absolute;
+            top: 28%;
+            left: 5%;
+        }
+        .white{
+            color: white;
+        }
+        .color{
+            color: rgb(250, 250, 87);
+        }
+        .about-section{
+            padding: 2em 2em;
+            /* line-height: 2em;
+            letter-spacing: 0.2em; */
+            background-color: #f9f9f9;
+            font-size: 1.1em;
+            /* font-weight: 500; */
+            margin-bottom: 2em;
+        }
+        .text-content{
+            /* line-height: 1.5em;
+            letter-spacing: 0.04em; */
+            text-align: justify;
+            padding: 0 4em;
+            font-weight: 300;
+            color: rgba(0, 0, 0, 0.573);
+        }
+        .about-head{
+            padding-bottom: 1em;
+            letter-spacing: 0.07em;
+            font-weight: 600;
+            font-size: 1.5em;
+            color: #008b8b;
+        }
+        .features-card{
+            padding-bottom: 3em;
+        }
+        .features-head{
+            letter-spacing: 0.05em;
+            font-weight: 600;
+            font-size: 1.5em;
+            color: #008b8b;
+        }
+        .card{
+            width: 22em;
+            height: 24em;
+            margin: 2em;
+            padding: 2em;
+            box-shadow: 0 0 10px rgba(0,0,0,.3);
+            background-image: linear-gradient(90deg, lightblue 0%, white 100%);
+        }
+        .flex{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card-head{
+            text-align: center;
+            border-bottom: 1px solid black;
+            padding-bottom: 0.5em;
+            font-size: 1.3em;
+        }
+        .card:hover{
+            transform: translateY(20px);
+            transition: 0.5s;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        }
+        .contact{
+            padding-top: 2em;
+            padding-bottom: 5em;
+            background-color: #f9f9f9;
+        }
+        .card-content{
+            padding-top: 1.2em;
+            text-align: justify;
+            color: #767676;
+            font-weight: 350;
+        }
+        .section--contact{
+            font-size: 1.5em;
+            letter-spacing: 0.04em;
+            font-weight: 600;
+            font-size: 1.5em;
+            color: #008b8b;
+        }
+        .contact-subhead{
+            font-size: 1em;
+            font-weight: bold;
+            padding-bottom: 5em;
+        }
+        .c1,.c2{
+            border-radius: 50%;
+            padding: 1em 2em;
+        }
+        .c1{
+            width: 90%;
+            margin-right: 2em;
+        }
+        .contributors{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer{
+            background-color: #2d2e32;
+            color: white;
+            padding: 2em;
+            font-size: 1.1em;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .link{
+            font-size: 1.1em;
+            font-weight: 300;
+            color: rgba(0, 0, 0, 0.573);
+        }
+        .link:hover{
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="https://dcassetcdn.com/design_img/6348/19222/19222_153674_6348_image.jpg" style="width: 5em; border-radius: 2em;" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+        <a class="nav-link active" href="/">Home</a>
+        </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/predict">Predict</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hero">
+        <img class="car" src="https://assets.cars24.com/production/c2b-website/240306184710/js/85ecae3abf056d0d7a74d97529ae3b7e.png" alt="">
+        <div class="text-on-image">
+            <h1 class="white font">
+            REVOLUTIONIZING 
+            <br>
+            <span class="color">USED CAR</span>
+            <br>
+             VALUATION
+        </h1>
+        </div>
+    </div>
+    <div>
+    <div class="about-section">
+        <h3 class="text-center about-head">ABOUT</h3>
+        <div class="text-content">Welcome to our website dedicated to predicting used car prices using machine learning
+            with Flask integration. Our project aims to provide accurate predictions for the selling prices of
+            used cars, empowering both sellers and buyers in the dynamic used car market.We have developed a machine learning model that analyzes various attributes of a used car, such as
+            year, present price, kilometers driven, fuel type, seller type, transmission, and owner history, to
+            predict its selling price. Users can input specific details about a car and receive an instant
+            estimate of its selling price.Our website for predicting used car prices offers several key features designed to enhance your experience. First and foremost, we utilize a sophisticated machine learning model based on Random Forest regression.Moreover, our web interface is designed for ease of use, allowing users to input specific details about a car effortlessly. This user-friendly design ensures that even those unfamiliar with machine learning can benefit from our predictive capabilities. Additionally, our approach emphasizes transparency and fairness, providing users with clear, understandable pricing based on the most relevant car features.</div>
+    </div>
+    <div class="features-card">
+        <h3 class="features-head text-center p-2">FEATURES</h3>
+        <div class="flex">
+        <div class="card">
+            <h3 class="card-head">Informed Decision-Making</h3>
+            <p class="card-content">Our website empowers users with the information they need to make informed decisions when buying or selling a used car. By providing accurate price predictions based on key car attributes, users can avoid overpaying or underselling, ensuring fair transactions and maximizing value.
+            </p>
+        </div>
+        <div class="card">
+            <h3 class="card-head">Time and Effort Savings</h3>
+            <p class="card-content">Gone are the days of manually researching car prices or relying on unreliable sources. Our website streamlines the process by instantly providing estimated selling prices. This saves users valuable time and effort, allowing them to focus on other aspects of their car buying or selling journey.</p>
+        </div>
+        <div class="card">
+            <h3 class="card-head">Market Insights and Trends</h3>
+            <p class="card-content">By using our website, users gain valuable insights into market trends and dynamics. Our machine learning model analyzes a vast array of data to identify patterns and trends, providing users with a deeper understanding of the used car market.</p>
+        </div>
+    </div>
+    </div>
+    <div class="contact" id="contact">
+        <h4 class="section--contact text-center">CONTACT</h4>
+        <h3 class="contact-subhead text-center">Don't be shy! Hit me up! 👇</h3>
+        <div class="flex contributors">
+            <div>
+                <img class="c1" src="https://i.postimg.cc/85yNbW5J/photo.jpg" alt="">
+                <!-- <h4 class="text-center">Mail</h4> -->
+                
+                <a class="link" href="mailto:ss7235@srmist.edu.in"><p class="text-center"><i class="bi bi-envelope-fill p-2" style="font-size: 2em; color: green;"></i>ss7235@srmist.edu.in</p></a>
+                <a class="link" href="https://www.linkedin.com/in/saransh-singh-b8b74519a/"><p class="text-center"><i class="bi bi-linkedin p-2" style="font-size: 2em; color: #0a66c2;"></i>@saransh-singh-b8b74519a</p></a>
+            </div>
+            <div>
+                <img class="c2" src="https://i.postimg.cc/66dhT08p/ss.jpg" alt="">
+                <a class="link" href="mailto:sj8693@srmist.edu.in"><p class="text-center"><i class="bi bi-envelope-fill p-2" style="font-size: 2em; color: green;"></i>sj8693@srmist.edu.in</p></a>
+                <a class="link" href="https://www.linkedin.com/in/sambhav-jindal-6859321b1/"><p class="text-center"><i class="bi bi-linkedin p-2" style="font-size: 2em; color: #0a66c2;"></i>@sambhav-jindal-6859321b1</p></a>
+            </div>
+        </div>
+</div>
+<div class="footer">
+    <p class="text-center"><b>Copyright © 2023 . All rights are reserved</b></p>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
